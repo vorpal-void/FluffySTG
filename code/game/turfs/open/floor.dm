@@ -29,7 +29,8 @@
 /turf/open/floor/Initialize(mapload)
 	. = ..()
 	if(mapload && prob(33))
-		MakeDirty()
+		if(!CONFIG_GET(flag/no_roundstart_garbage))
+			MakeDirty()
 
 	if(is_station_level(z))
 		GLOB.station_turfs += src

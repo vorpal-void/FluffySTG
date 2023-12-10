@@ -567,3 +567,9 @@ DISALLOW_TITLE_MUSIC
 ## FF CONFIGS
 ROUNDSTART_RACES nabber
 ROUNDSTART_RACES teshari_alt
+
+## ENTROPY CONFIGS
+## Disable random garbage, dust, blood splats, etc. on round start mapgen
+NO_ROUNDSTART_GARBAGE
+## Disable random lightbulb being broken at late round init
+NO_ROUNDSTART_BROKEN_LIGHTS
